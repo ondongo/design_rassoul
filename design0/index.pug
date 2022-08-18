@@ -1,0 +1,20 @@
+main(role="main")
+	button#popup-trigger.popup-trigger.btn: span Signup Now
+			i.fa.fa-plus-square-o
+#overlay.overlay
+	#overlay-background.overlay-background
+	#overlay-content.overlay-content
+		#overlay-close.fa.fa-times.fa-lg.overlay-close
+		h1.main-heading Signup Now
+		h3.blurb Creating an account is free &mdash;
+		span.blurb-tagline and won't take longer than a couple of seconds.
+		form.signup-form(method="post",action="#",novalidate)
+			label(for="signup-name") Full Name
+			input#signup-name(type="text",name="name",autocomplete="off")
+			label(for="signup-email") Email Address
+			input#signup-email(type="email",name="email",autocomplete="off")
+			label(for="signup-pw") Password
+			input#signup-pw(type="password",name="pw",autocomplete="off")
+			label(for="signup-cpw") Confirm Password
+			input#signup-cpw(type="password",name="cpw",autocomplete="off")
+			button.btn.btn-outline.submit-btn: span signup
