@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sentrust</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+   
+   
+
+
+        
+        <!-- <section id="step-1" class="form-step"> -->
+          <div class="signupSection">
+  
+  <div class="info">
+    
+    <!-- <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i> -->
+    <img src="img/bi.png" alt="" width="300px;">
+    <p></p>
+   
+  </div>
+  <form action="#" method="POST" id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" class="signupForm" >
+    
+    <h2>Personne à assurer</h2>
+    <ul class="noBullet">
+      <li>
+        <label for="username"></label>
+        <input type="text" class="inputFields" id="username" name="username" placeholder="Nom" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="username"></label>
+        <input type="text" class="inputFields" id="prenom" name="prenom" placeholder="Prenom" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+
+      <li>
+        <label for="adress"></label>
+        <input type="adress" class="inputFields" id="adress" name="adress" placeholder="adresse" value="" oninput="return passwordValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="date"></label>
+
+        <input type="date" class="inputFields" id="start" name="trip-start"
+       value="2018-07-22"
+        min="2018-01-01" max="2018-12-31">
+      </li>
+
+      <li>
+    </ul>
+
+    <h2>Questionnnaire?</h2>
+    <ul class="noBullet">
+     
+
+      <li>
+        <p style="text-align:justify;">2. Souffrez-vous ou avez-vous été atteint d'une maladie de l'appareil cardio-vasculaire, de
+          l'appareil digestif, de l'appareil respiratoire, du système nerveux, de l'appareil génito-urinaire
+          d'une maladie endocrinienne ou métabolique, d'une maladie neuropsychique, d'une maladie
+          des os et des articulations ou d'une tumeur ? </p>
+        <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+        <label for="demo3-a">Oui</label>
+        <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+        <label for="demo3-b">Non</label></li>
+
+        <li>
+          <p style="text-align:justify;">3. Avez-vous suivi au cours des 5 dernières années ou sui vez-vous actuellement un traitement d'une di
+            Semaines? </p>
+          <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+          <label for="demo3-a">Oui</label>
+          <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+          <label for="demo3-b">Non</label></li>
+
+        
+          <li >
+            <p style="text-align:justify;">4. Etes-vous en arrêt de travail ou l'avez-vous été pendant plus de 3 semaines consécutives au cours de
+              années?</p>
+            <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+            <label for="demo3-a">Oui</label>
+            <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+            <label for="demo3-b">Non</label></li>
+
+
+            <li>
+              <p style="text-align:justify;">5. Avez-vous été hospitalisé (e) plus d'une semaine ou devez-vous l'être prochainement </p>
+              <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+              <label for="demo3-a">Oui</label>
+              <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+              <label for="demo3-b">Non</label></li>
+
+
+              <li>
+                <p style="text-align:justify;">6. Avez-vous été victime d'accident? </p>
+                <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+                <label for="demo3-a">Oui</label>
+                <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+                <label for="demo3-b">Non</label></li>
+
+
+                <li>
+                  <p style="text-align:justify;">7. Êtes-Vous titulaire d'une pension d'invalidité ou une procédure d'invalidité est-elle en cours ? </p>
+                  <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+                  <label for="demo3-a">Oui</label>
+                  <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+                  <label for="demo3-b">Non</label></li>
+
+                  <li>
+                    <p style="text-align:justify;">8. Avez-vous subi un test de dépistage des sérologies, en particulier pour les virus des hépatites B et C
+                      'immunodéficience humane (VIH), dont le résulta a été positif ?
+                      A quelle date ? </p>
+                    <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+                    <label for="demo3-a">Oui</label>
+                    <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+                    <label for="demo3-b">Non</label></li>
+
+
+                    <li>
+                      <p style="text-align:justify;">9. Consommez-vous de boissons alcoolisées quotidiennement?</p>
+                      <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+                      <label for="demo3-a">Oui</label>
+                      <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+                      <label for="demo3-b">Non</label></li>
+                      <li>
+
+                        <p style="text-align:justify;">10. Fumez-vous? </p>
+                        <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+                        <label for="demo3-a">Oui</label>
+                        <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+                        <label for="demo3-b">Non</label></li>
+      
+
+                        <li>
+
+                          <p style="text-align:justify;">11. Devez-vous subir prochainement des examens médicaux (en dehors des bilans systématiques annue
+                            Du type médecine du travail) ? </p>
+                          <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+                          <label for="demo3-a">Oui</label>
+                          <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+                          <label for="demo3-b">Non</label></li>
+
+
+                          <li>
+
+                            <p style="text-align:justify;">12. Avez-vous fait l'objet d'un refus, d'un ajournement, d'une restriction, ou d'une surprime pour un
+                              Précédent contrat d'assurance de personnes ? </p>
+                            <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+                            <label for="demo3-a">Oui</label>
+                            <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+                            <label for="demo3-b">Non</label></li>
+
+
+                            <li>
+
+                              <p style="text-align:justify;">13. Utilisez-vous en tant que pilote ou passager des engins aériens (hors lines commerciales régulière</p>
+                              <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+                              <label for="demo3-a">Oui</label>
+                              <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+                              <label for="demo3-b">Non</label></li>
+
+
+
+                              <li>
+
+                                <p style="text-align:justify;">14. Pratiquez-vous des sports ?
+                                  Si oui, lesquels? </p>
+                                <input type="radio" name="demo3" class="demo3 demoyes" id="demo3-a" checked>
+                                <label for="demo3-a">Oui</label>
+                                <input type="radio" name="demo3" class="demo3 demono" id="demo3-b" >
+                                <label for="demo3-b">Non</label></li>
+    
+  
+
+
+
+      <li id="center-btn">
+<input type="submit" id="join-btn" name="join" alt="Join" value="Envoyer"> 
+
+        <!-- <input type="button" name="previous" class="previous action-button-previous" value=
+          "Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/> -->
+
+                <input type="button" id="join-btn" name="join" alt="Join" step_number="2" step_number="2" value="Next"/>
+      </li>
+ 
+    </ul>
+
+   
+      
+  
+    
+    <!-- Circles which indicates the steps of the form: -->
+  </div>
+  
+
+</form>
+  <!-- </section> -->
+ 
+
+
+
+
+
+
+  
+
+    
+
+
+
+
+
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sentrust</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+          <div class="signupSection">
+  
+  <div class="info">
+    <h2>Banque Islamique</h2>
+    <!-- <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i> -->
+    <img src="img/bi.png" alt="" width="300px;">
+    <p><u>Document à fournir chaque début d'année 01 Janvier</u></p>
+    <span>
+      <ul style="text-align:justify;">
+        <li style="font-size:14px">Certificat de Scolarité des enfants</li>
+        <li style="font-size:14px">Certificat de la non imposition</li>
+        <li style="font-size:14px">Tout document justifiant l'augmentation ou la diminution des parts d'imposition</li>
+      </ul></span>
+  </div>
+  <form action="#" method="POST" id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" class="signupForm" >
+    
+    <h2>Identification</h2>
+    <ul class="noBullet">
+      <li>
+        <label for="username"></label>
+        <input type="text" class="inputFields" id="username" name="username" placeholder="Nom" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="username"></label>
+        <input type="text" class="inputFields" id="prenom" name="prenom" placeholder="Prenom" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+
+      <li>
+        <label for="adress"></label>
+        <input type="adress" class="inputFields" id="adress" name="adress" placeholder="adresse" value="" oninput="return passwordValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="date"></label>
+
+        <input type="date" class="inputFields" id="start" name="trip-start"
+       value="2018-07-22"
+        min="2018-01-01" max="2018-12-31">
+      </li>
+
+      <li>
+
+      <select name="pets" class="inputFields" id="pet-select">
+   
+      <option value="dog">Marié(e)</option>
+          <option value="cat">Célibataire</option>
+          <option value="hamster">Veuf(ve)</option>
+          </select></li>
+
+          <li>
+            
+				
+						<input name="nombre_de_femme" type='number'  min="0" max="15" step="1" id="" class="inputFields" placeholder="Nbre femmes" required></textarea>
+						
+		
+					</li>
+					<li>
+            <label class="form-group">
+					<input class="inputFields" placeholder="Nbre d'enfants" type="number" id="N" min="0" max="15" step="1" 
+					   onchange="Chbx();return True;" >
+             </label>
+		
+          </li>
+
+
+          <li>
+          
+					<div id="InputFields" type="date"  style="font-family:montserrat-regular;"></div>
+          </li>
+      <li id="center-btn">
+<input type="submit" id="join-btn" name="join" alt="Join" value="Envoyer"> 
+
+        <!-- <input type="button" name="previous" class="previous action-button-previous" value=
+          "Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/> -->
+
+                <input type="button" id="join-btn" name="join" alt="Join" step_number="2" step_number="2" value="Next"/>
+      </li>
+ 
+    </ul>
+
+   
+      
+  
+    
+    <!-- Circles which indicates the steps of the form: -->
+  </div>
+  
+
+</form>
+  <!-- </section> -->
+ 
+	
+
+
+
+
+  
+
+    
+
+
+
+
+
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
