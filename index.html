@@ -172,6 +172,38 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   padding: 14px 0;
 }
+#header .logos {
+  font-size: 12px;
+  margin: 0;
+  
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+
+  
+  
+  color:rgb(25,25,112) !important;
+}
+#header .logos a {
+ 
+ font-family: 'Mulish', sans-serif;
+ color:rgb(25,25,112) !important;
+ font-weight:500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #header .logo {
   font-size: 12px;
   margin: 0;
@@ -193,13 +225,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-@media only screen and (min-width: 600px) {
+@media  (max-width: 600px) {
   
-  #header .logo a {
-    padding: 0 0 0 25px;
-  font-family: 'Mulish', sans-serif;
-  color:rgb(25,25,112) !important;
-  font-weight:500px;
+  #header .logos  {
+    display: none;
  }}
 
  
@@ -632,7 +661,7 @@ section {
       <!--<h1 class="logo me-auto me-lg-0"><a href="index.html"><img src='image/logo.png'></a></h1>
       -->
       <a href="index.html" class="logo"><img src="image/logo.png" alt="" class="img-fluid"></a>
-	  <h3 class="logo me-auto "><a href="index.html">Banque Islamique du Sénégal</a></h3>
+	  <h3 class="logos me-auto "><a href="index.html">Banque Islamique du Sénégal</a></h3>
 
       <nav id="navbar" class="navbar">
         <ul>
