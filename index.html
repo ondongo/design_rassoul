@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #e9e8e6;
   box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
   z-index: 997;
-  padding: 15px 0;
+  padding: 14px 0;
 }
 #header .logo {
   font-size: 12px;
@@ -178,36 +178,48 @@ h1, h2, h3, h4, h5, h6 {
   
   line-height: 1;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+
+
   
   
   color:rgb(25,25,112) !important;
 }
 #header .logo a {
- padding: 0 0 0 25px;
+ 
  font-family: 'Mulish', sans-serif;
  color:rgb(25,25,112) !important;
  font-weight:500px;
 }
+
+
+@media only screen and (min-width: 600px) {
+  
+  #header .logo a {
+    padding: 0 0 0 25px;
+  font-family: 'Mulish', sans-serif;
+  color:rgb(25,25,112) !important;
+  font-weight:500px;
+ }}
+
+ 
 #header .logo img {
   max-height: 40px;
   padding-left:10px;
 }
-@media (max-width: 992px) {
-  #header .logo {
-    font-size: 28px;
-  }
-}
+
+
 
 /*--------------------------------------------------------------
 # Header Social Links
 --------------------------------------------------------------*/
 .header-social-links {
   padding-right: 15px;
+  margin-left: -20px;;
 }
 .header-social-links a {
   color: #6f6f6f;
-  padding-left: 6px;
+  padding-left: 4px;
   display: inline-block;
   line-height: 0px;
   transition: 0.3s;
@@ -586,7 +598,7 @@ section {
   color:#fff;
   
   text-decoration: none;}
-}
+
 .taille
 {
     font-size: 45px !important;
@@ -613,7 +625,7 @@ section {
       <!--<h1 class="logo me-auto me-lg-0"><a href="index.html"><img src='image/logo.png'></a></h1>
       -->
       <a href="index.html" class="logo"><img src="image/logo.png" alt="" class="img-fluid"></a>
-	  <h3 class="logo me-auto "><a href="index.html"><b>Banque Islamique du Sénégal</b> </a></h3>
+	  <h3 class="logo me-auto "><a href="index.html">Banque Islamique du Sénégal</a></h3>
 
       <nav id="navbar" class="navbar">
         <ul>
