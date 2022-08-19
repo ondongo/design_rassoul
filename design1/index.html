@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm_v7 by Colorlib</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+		<link href="https://fr.allfont.net/allfont.css?fonts=montserrat-bold" rel="stylesheet" type="text/css" />
+		<link href="https://fr.allfont.net/allfont.css?fonts=montserrat-semibold rel="stylesheet" type="text/css"/>
+		<link href="https://fr.allfont.net/allfont.css?fonts=montserrat-regular rel="stylesheet" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.12.0.min.js">
+		<script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		
+		<!-- STYLE CSS -->
+		
+		
+		<style>
+					* {
+		  -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box; }
+
+		body {
+		  font-family: 'montserrat-regular', sans-serif;
+		  color: #fff;
+		  font-size: 15px;
+		  margin: 0; }
+
+		input, textarea, select, button {
+		  font-family:'montserrat-regular', sans-serif;
+		  color: #fff;
+		  font-size: 15px; }
+
+		p, h1, h2, h3, h4, h5, h6, ul {
+		  margin: 0; }
+
+		img {
+		  max-width: 100%; }
+
+		ul {
+		  padding-left: 0;
+		  margin-bottom: 0; }
+
+		a:hover {
+		  text-decoration: none; }
+
+		:focus {
+		  outline: none; }
+
+		.wrapper {
+		  min-height: 100vh;
+		  display: flex;
+		  align-items: center;
+		  background: url("../images/bg-registration-form-7.jpg") no-repeat;
+		  background-size: cover; }
+
+		.inner {
+		  max-width: 758px;
+		  margin: auto;
+		  background: #39459b;
+		  border: 10px solid #0d99d7;
+		  padding: 77px 99px 87px;
+		  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+		  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+		  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+		  -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+		  -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
+
+		textarea {
+		  resize: none; }
+
+		h3 {
+		  text-transform: uppercase;
+		  font-size: 45px;
+		  font-family: 'montserrat-bold',sans-serif;
+		  text-align: center;
+		  margin-bottom: 12px; }
+
+		p {
+		  text-align: center;
+		  padding: 0 10px;
+		  margin-bottom: 55px;
+		  line-height: 1.8; }
+
+		.form-group {
+		  position: relative;
+		  display: block;
+		  margin-bottom: 48px; }
+		  .form-group span {
+			font-size: 15px;
+			color: #00ade6;
+			position: absolute;
+			top: 11px;
+			transition: all .2s ease;
+			transform-origin: 0 0;
+			cursor: text; }
+		  .form-group span.border {
+			height: 2px;
+			display: block;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 41px;
+			transform: scaleX(0);
+			transition: all .15s ease;
+			background: #fff; }
+
+		.form-control {
+		  border: none;
+		  border-bottom: 2px solid #00ade6;
+		  display: block;
+		  width: 100%;
+		  height: 43px;
+		  font-size: 15px;
+		  background: none;
+		  font-family: 'montserrat-semibold'; }
+		  .form-control:focus, .form-control:valid {
+			border-bottom: 2px solid #fff; }
+			.form-control:focus + span, .form-control:valid + span {
+			  transform: translateY(-22px) scale(0.8); }
+			  .form-control:focus + span + .border, .form-control:valid + span + .border {
+				transform: scaleX(1); }
+
+		textarea.form-control {
+		  padding-top: 10px;
+		  padding-bottom: 10px; }
+
+		button {
+		  border: none;
+		  width: 162px;
+		  height: 51px;
+		  border: 2px solid #fff;
+		  margin: auto;
+		  margin-top: 60px;
+		  cursor: pointer;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  padding: 0;
+		  background: none;
+		  color: #fff;
+		  text-transform: uppercase;
+		  font-family: 'montserrat-semibold',sans-serif;;
+		  -webkit-transform: perspective(1px) translateZ(0);
+		  transform: perspective(1px) translateZ(0);
+		  position: relative;
+		  -webkit-transition-property: color;
+		  transition-property: color;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s; }
+		  button i {
+			margin-left: 10px;
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+			-webkit-transition-duration: 0.1s;
+			transition-duration: 0.1s;
+			-webkit-transition-property: transform;
+			transition-property: transform;
+			-webkit-transition-timing-function: ease-out;
+			transition-timing-function: ease-out; }
+		  button:before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #2098D1;
+			-webkit-transform: scaleX(0);
+			transform: scaleX(0);
+			-webkit-transform-origin: 0 50%;
+			transform-origin: 0 50%;
+			-webkit-transition-property: transform;
+			transition-property: transform;
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-timing-function: ease-out;
+			transition-timing-function: ease-out; }
+		  button:hover {
+			border-color: transparent; }
+			button:hover:before {
+			  -webkit-transform: scaleX(1);
+			  transform: scaleX(1); }
+			button:hover i {
+			  -webkit-transform: translateX(4px);
+			  transform: translateX(4px); }
+
+		@media (max-width: 767px) {
+		  h3 {
+			font-size: 38px; }
+
+		  p {
+			font-size: 14px;
+			padding: 0; }
+
+		  .inner {
+			padding: 27px 20px 37px;
+			border: none;
+			box-shadow: none;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			-ms-box-shadow: none;
+			-o-box-shadow: none; }
+
+		  .wrapper {
+			background: #39459b;
+			border: 10px solid #0d99d7; } }
+				
+				
+				
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+}
+
+.rs-select2 .select2-container {
+  width: 100% !important;
+  outline: none;
+  outline: none;
+  border: none;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 0;
+  color: #00ade6;
+  
+  height: 32px;
+  right: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+  font-family: "Material-Design-Iconic-Font";
+  content: '\f2f9';
+  font-size: 18px;
+  color: #00ade6;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  display: none !important;
+
+
+}
+
+
+select {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 0px 0px;
+	background:#39459b;
+	
+	}
+	
+	.disabled {
+  color: blue;
+}
+selected {
+  color: blue;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}
+input::-webkit-datetime-edit{ color: transparent; }
+
+/* Include this to make it visible when input is clicked */
+input:focus::-webkit-datetime-edit{ color: #fff; } 
+
+
+
+
+		</style>
+		
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<form action="">
+					<h2>Formulaire de Déclaration sur L'Honneur</h2>
+					<p></p>
+					<label class="form-group">
+						<input type="text" class="form-control" name='nom_et_prenom' required>
+						<span>Noms et Prénoms</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" name="matricule"  required>
+						<span for="">Matricule</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="date" class="form-control" name="date"  required>
+						<span for="">Date de Naissance</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" name="lieu"  required>
+						<span for="">Lieu de Naissance</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" name="adresse"  required>
+						<span for="">Adresse Actuelle</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" name="cni"  required>
+						<span for="">Numéro De Carte D'identité Nationale </span>
+						<span class="border"></span>
+					</label>
+					
+					
+					
+					
+                        
+                        
+					
+					
+					
+					
+					
+					<div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="situation" style:'color:green !important;'>
+                                   <option  disabled="disabled" selected="selected"><span class='disabled'>Situation Matrimoniale</span></option>
+                                   <option   value="célibataire">Célibataire</option>
+								  <option   value="marié">Marié(e)</option>
+								  <option   value="divorcé">Divorcé(e)</option>
+								  <option   value="Veuf">Veuf(ve)</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+					
+					
+					
+					
+					
+						
+					
+					<label class="form-group" >
+						<input name="nombre_de_femme" type='number'  min="0" max="15" step="1" id="" class="form-control" required></textarea>
+						<span for="">Nombre de femmes</span>
+						<span class="border"></span>
+					</label>
+					
+					<label class="form-group">
+					<input class="form-control" type="number" id="N" min="0" max="15" step="1" 
+					   style="width:" onchange="Chbx();return True;">
+					   <span for="">Nombre d'enfants</span>
+						<span class="border"></span>
+
+					</label>
+					<br>
+					<div id="InputFields" style:'font-family:montserrat-regular';></div>
+					<div id="InputFields_date" style:'font-family:montserrat-regular';></div>
+					<button> Soumettre 
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+				
+				
+		</div>
+		</div>		
+
+
+				
+				<script>
+function Chbx() {
+    Fields=document.getElementById("InputFields");
+    N=document.getElementById("N").value;
+    while (Fields.hasChildNodes()) {Fields.removeChild(Fields.lastChild);}
+    for (i=0;i<N;i++) {
+	   //Fields.appendChild(document.createTextNode("Enfant " + (i+1)+" "));
+	   var label= document.createElement('label');
+	   label.id="n"+i ;
+	   label.class="form-group";
+	   label.setAttribute("class", "form-group");
+	   Fields.appendChild(label);
+	   
+	   Fa=document.getElementById("n"+i);
+		
+       var input = document.createElement('input');
+	   input.setAttribute("type", "text");
+	   input.setAttribute("class", "form-control");
+       input.type = "text";
+	   input.class = "form-control";
+       input.name = "nom_enfant" + i;
+       input.id = "k" + i;
+	   Fa.appendChild(input);
+	   //document.getElementById("k"+i).value=25;
+	   var span = document.createElement("span");
+	   span.textContent=('Nom et Prénom Enfant '+(i+1) +'');
+	   var border = document.createElement("span");
+		border.class= " border";
+		border.setAttribute("class", "border");
+	   
+	   Fa.appendChild(span);
+	   Fa.appendChild(border);
+       Fields.appendChild(label);
+	   
+	}
+	Fields_date=document.getElementById("InputFields_date");
+	   
+	while (Fields_date.hasChildNodes()) {Fields_date.removeChild(Fields_date.lastChild);}   
+	for (i=0;i<N;i++) {
+       //Date de naissance
+	   
+	   
+	   var label_date= document.createElement('label');
+	   label_date.id="num"+i ;
+	   label_date.class="form-group";
+	   label_date.setAttribute("class", "form-group");
+	   Fields_date.appendChild(label_date);
+	   
+	   Fa_date=document.getElementById("num"+i);
+		
+       var input_date = document.createElement('input');
+	   input_date.setAttribute("type", "date");
+	   input_date.setAttribute("class", "form-control");
+       input_date.type = "date";
+	   input_date.class = "form-control";
+       input_date.name = "date" + i;
+       input_date.id = "k1" + i;
+	   Fa_date.appendChild(input_date);
+	   //document.getElementById("k"+i).value=25;
+	   var span_date = document.createElement("span");
+	   span_date.textContent=("Date de naissance de L'enfant" +(i+1) +'');
+	   var border_date = document.createElement("span");
+		border_date.class= " border";
+		border_date.setAttribute("class", "border");
+	   
+	   Fa_date.appendChild(span_date);
+	   Fa_date.appendChild(border_date);
+       Fields_date.appendChild(label_date);
+	   
+	   
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+ Chbx();
+</script>
+
+
+<script>
+
+
+
+(function ($) {
+    'use strict';
+    /*==================================================================
+        [ Daterangepicker ]*/
+    try {
+        $('.js-datepicker').daterangepicker({
+            "singleDatePicker": true,
+            "showDropdowns": true,
+            "autoUpdateInput": false,
+            locale: {
+                format: 'DD/MM/YYYY'
+            },
+        });
+    
+        var myCalendar = $('.js-datepicker');
+        var isClick = 0;
+    
+        $(window).on('click',function(){
+            isClick = 0;
+        });
+    
+        $(myCalendar).on('apply.daterangepicker',function(ev, picker){
+            isClick = 0;
+            $(this).val(picker.startDate.format('DD/MM/YYYY'));
+    
+        });
+    
+        $('.js-btn-calendar').on('click',function(e){
+            e.stopPropagation();
+    
+            if(isClick === 1) isClick = 0;
+            else if(isClick === 0) isClick = 1;
+    
+            if (isClick === 1) {
+                myCalendar.focus();
+            }
+        });
+    
+        $(myCalendar).on('click',function(e){
+            e.stopPropagation();
+            isClick = 1;
+        });
+    
+        $('.daterangepicker').on('click',function(e){
+            e.stopPropagation();
+        });
+    
+    
+    } catch(er) {console.log(er);}
+    /*[ Select 2 Config ]
+        ===========================================================*/
+    
+    try {
+        var selectSimple = $('.js-select-simple');
+    
+        selectSimple.each(function () {
+            var that = $(this);
+            var selectBox = that.find('select');
+            var selectDropdown = that.find('.select-dropdown');
+            selectBox.select2({
+                dropdownParent: selectDropdown
+            });
+        });
+    
+    } catch (err) {
+        console.log(err);
+    }
+    
+
+})(jQuery);
+	
+	</script>
+			
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
